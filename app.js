@@ -10,16 +10,21 @@ if ((parts.length / 2) % 2 != 0) {
 }
 
 parts.forEach((part, index) => {
-  let angle = (360 / parts.length) * (index + 1) - deviation;
+  let angle = (360 / parts.length) * (index + 1) 
+              - deviation;
   let skewVal = 360 / parts.length - 90;
 
-  part.style.transform = `rotate(${angle}deg) skew(${skewVal}deg)`;
+  part.style.transform = `rotate(${angle}deg) 
+                          skew(${skewVal}deg)`;
 
-  let conAngle = angle + Math.abs(skewVal) + (90 - Math.abs(skewVal)) / 2;
+  let conAngle = angle + Math.abs(skewVal) 
+             + (90 - Math.abs(skewVal)) / 2;
 
   contents[
     index
-  ].style.transform = `rotateZ(${conAngle}deg) translateY(-140px) rotate(-${conAngle}deg)`;
+  ].style.transform = `rotateZ(${conAngle}deg) 
+                      translateY(-140px) 
+                      rotate(-${conAngle}deg)`;
 });
 
 let btn = document.querySelector(".btn");
