@@ -31,33 +31,15 @@ body {
     rgba(255, 255, 255, 0.05);
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
-    inset -1px -1px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 2px 2px 2px 
+              rgba(255, 255, 255, 0.5),
+              inset -1px -1px 1px 
+              rgba(255, 255, 255, 0.3);
   overflow: hidden;
   width: 70px;
   height: 70px;
   transition: 0.3s ease;
 }
-
-/* .menu::before {
-  position: absolute;
-  content: "\f0c9";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  width: 70px;
-  height: 70px;
-  background: #fff;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 10;
-} */
 
 .menu a {
   position: absolute;
@@ -124,5 +106,6 @@ body {
 }
 
 .menu.active .btn {
-  transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) 
+             rotate(180deg);
 }
